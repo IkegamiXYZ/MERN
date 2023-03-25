@@ -9,7 +9,7 @@ const auth =async(req, res, next) => {
         return next()
     }
 
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQG1vbm90YWluLmNvbSIsImlhdCI6MTY3OTU2OTUzNiwiZXhwIjoxNjc5NjUyMzM2fQ.LjS__OpTDc67nb1A-kiLjXYUwnSjXs_4rmYjybFXAZs"
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQG1vbm90ZWluLmNvbSIsImlhdCI6MTY3OTc1MDE3MCwiZXhwIjoxNjc5ODMyOTcwfQ.-InXeP3yxVTs5Pg4wXEDUmA-0uDYL7OjfcjW-NbSjIQ"
     //await req.headers.authorization.split("")[1]
     if(!token){
         return res.status(400).json({message: "トークンがありません"})
